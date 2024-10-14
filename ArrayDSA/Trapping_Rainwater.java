@@ -36,8 +36,8 @@ public class Trapping_Rainwater {
 	}
 	
 	public static void main(String[] args) {
-		int height[]= {4,5,6,3,7,3,9};
+		int height[]= {4,5,6,3,7,6,9};
 		trappingRainwater(height);
-		System.out.println("Trapping rain water = "+trappingRainwater(height));
+		System.out.println("Trapping rain water = "+trappingRainwater(height)+"units");
 	}
 }
