@@ -2,6 +2,24 @@ package com.enfy.string1;
 
 public class RegularExpression1 {
 
+	/*
+	 * Regular Expressions or Regex (in short) in Java is 
+	 * an API for defining String patterns that can be used for 
+	 * searching, manipulating,
+	 *  and editing a string in Java. 
+	 *  
+	 *  Quentifiers : -
+	 *   . = anything 
+	 *   * =  0 or more time, e.g., [abc]*->abc aabbcc accbbaa , [a-z]* a to z 
+	 *   + = one or more 
+	 *   ? = 0 or 1 time	
+	 *   {x}=X times   , e.g., [a-z]{5}-> only five letters allow
+	 *   {X,Y}= Between X and Y time in string
+	 *   
+	 *   \\w =  any alphabets and digits
+	 *   \\s = 
+	 */
+	
 	public static void removeSpecialChar(String str)
 	{
 		String str1=str.replace(" ", "");
@@ -20,7 +38,7 @@ public class RegularExpression1 {
 	
 	public static void numOfWordsInString(String str)
 	{
-		str = str.replaceAll("\\s"," ");
+		str = str.replaceAll("\\s+"," ");
 		System.out.println(str	);
 		
 		String words[]=str.split("\\s");
