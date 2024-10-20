@@ -1,5 +1,7 @@
 package com.enfy.string1;
 
+import java.util.Scanner;
+
 public class RegularExpression1 {
 
 	/*
@@ -19,7 +21,6 @@ public class RegularExpression1 {
 	 *   \\w =  any alphabets and digits
 	 *   \\s = 
 	 */
-	
 	public static void removeSpecialChar(String str)
 	{
 		String str1=str.replace(" ", "");
@@ -39,17 +40,56 @@ public class RegularExpression1 {
 	public static void numOfWordsInString(String str)
 	{
 		str = str.replaceAll("\\s+"," ");
-		System.out.println(str	);
+		System.out.println(str);
 		
 		String words[]=str.split("\\s");
 		System.out.println(words.length);
 		
 	}
+	
+	
+	public static void checkWebURL()
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the url");
+		String url = sc.nextLine();
+		
+		String protocol = url.substring(0,url.indexOf(":"));
+		
+		if(protocol.equals("http"))
+		{
+			System.out.println("hypertext transfer protocol");
+		}
+		else if(protocol.equals("ftp"))
+		{
+			System.out.println("File Transform Protocol");
+		}
+		
+		String ext = url.substring(url.lastIndexOf(".")+1);
+		
+		if(ext.equals("com"))
+		{
+			System.out.println("Commercial");
+		}
+		else if(ext.equals("org"))
+		{
+			System.out.println("organization");
+		}
+		else if(ext.equals("net"))
+		{
+			System.out.println("Network");
+		}
+		
+		
+	}
+	
 	public static void main(String[] args) {
-		String str="!2ewje43   Ragini";
+		String str="!2ewje43   Ra gi      ni";
 		removeSpecialChar(str);
-		numOfWordsInString(str);
+		numOfWordsInString( str);
 		removeExtraSpaces(str);
 		
+		checkWebURL();
 	}
 }
