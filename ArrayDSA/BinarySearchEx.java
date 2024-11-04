@@ -1,4 +1,5 @@
-package ArrayDSA;
+package com.enfy.ArrayDSA;
+
 
 public class BinarySearchEx {
 	public static int binarySearch(int numbers[], int key)

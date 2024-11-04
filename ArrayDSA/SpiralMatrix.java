@@ -1,4 +1,5 @@
-package ArrayDSA;
+package com.enfy.ArrayDSA;
+
 
 /*
  * Define the boundaries of the matrix with variables top, bottom, left, and right.
