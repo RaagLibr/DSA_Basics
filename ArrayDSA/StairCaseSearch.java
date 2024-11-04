@@ -1,4 +1,5 @@
-package ArrayDSA;
+package com.enfy.ArrayDSA;
+
 
 public class StairCaseSearch {
 	public static boolean stairCaseSearch(int mat[][],int key)
